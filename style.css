@@ -12,13 +12,13 @@ footer {
 }
 
 main {
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 article.wrapper {
   display: flex;
   justify-items: center;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
 }
 
 article.wrapper .subject {
@@ -26,6 +26,9 @@ article.wrapper .subject {
   min-width: 500px;
   padding-right: 2rem;
   font-weight: bold;
+}
+article.wrapper .mobile {
+  display: none;
 }
 
 article.wrapper .contents {
@@ -74,17 +77,31 @@ footer {
   }
 
   main {
-    padding-top: 3rem;
+    padding-top: 4.6rem;
   }
 
   article.wrapper {
     display: block;
+    /* margin-bottom: 8rem; */
   }
 
   article.wrapper .subject {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     min-width: auto;
     padding-right: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article.wrapper .mobile {
+    display: block;
+    line-height: 1;
+  }
+
+  article.wrapper .mobile p:last-child {
+    line-height: 1.5;
+  }
+
+  article.wrapper .pc {
+    display: none;
   }
 }
