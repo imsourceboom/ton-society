@@ -42,11 +42,10 @@ article.wrapper .subject {
 
 article.wrapper .grants {
   display: block;
-  line-height: 1;
 }
 
-article.wrapper .grants p:last-child {
-  line-height: 1.5;
+article.wrapper .grants p:nth-child(2) {
+  line-height: 0.5;
 }
 
 article.wrapper .contents {
