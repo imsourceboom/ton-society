@@ -4,7 +4,7 @@
   "theme_color": "#232328",
   "background_color": "#232328",
   "display": "fullscreen",
-  "orientation": "protrait",
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "icons": [
