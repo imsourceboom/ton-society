@@ -24,7 +24,8 @@ body {
   height: 100%;
   font-size: 20px;
   line-height: 1.5;
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Space Mono', monospace;
+  /* font-family: 'Mulish', sans-serif; */
 }
 img,
 picture,
