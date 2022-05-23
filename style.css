@@ -40,8 +40,13 @@ article.wrapper .subject {
   display: flex;
 }
 
-article.wrapper .mobile {
-  display: none;
+article.wrapper .grants {
+  display: block;
+  line-height: 1;
+}
+
+article.wrapper .grants p:last-child {
+  line-height: 1.5;
 }
 
 article.wrapper .contents {
@@ -116,19 +121,6 @@ footer {
     min-width: auto;
     padding-right: 0;
     margin-bottom: 1rem;
-  }
-
-  article.wrapper .mobile {
-    display: block;
-    line-height: 1;
-  }
-
-  article.wrapper .mobile p:last-child {
-    line-height: 1.5;
-  }
-
-  article.wrapper .pc {
-    display: none;
   }
 
   .coming-soon {
