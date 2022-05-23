@@ -58,6 +58,19 @@ a.link {
   font-size: 1.2rem;
   font-weight: bold;
   color: #07a0ec;
+  position: relative;
+}
+
+.coming-soon:after {
+  content: 'Coming Soon...';
+  position: absolute;
+  bottom: -70%;
+  left: 0%;
+  z-index: 99;
+  font-size: 0.6rem;
+  color: #f7f9fb;
+  background-color: rgba(248, 250, 252, 0.1);
+  cursor: auto;
 }
 
 .bold {
@@ -116,6 +129,10 @@ footer {
 
   article.wrapper .pc {
     display: none;
+  }
+
+  .coming-soon {
+    display: block;
   }
 }
 
