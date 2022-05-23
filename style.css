@@ -11,6 +11,17 @@ footer {
   padding: 1rem 2rem;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 35px;
+  margin-right: 0.4rem;
+}
+
 main {
   padding-top: 6rem;
 }
@@ -26,7 +37,9 @@ article.wrapper .subject {
   min-width: 500px;
   padding-right: 2rem;
   font-weight: bold;
+  display: flex;
 }
+
 article.wrapper .mobile {
   display: none;
 }
@@ -104,4 +117,28 @@ footer {
   article.wrapper .pc {
     display: none;
   }
+}
+
+a#gototop {
+  position: fixed;
+  bottom: 6vh;
+  right: 5vw;
+  z-index: 999999;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(169, 239, 241, 0.432);
+  backdrop-filter: blur(4px);
+  background-image: url(https://icongr.am/clarity/arrow.svg?size=30&color=6b6b6b);
+  background-position: center;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+
+a#gototop.show {
+  opacity: 1;
+  visibility: visible;
 }
