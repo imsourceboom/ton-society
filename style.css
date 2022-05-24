@@ -6,7 +6,7 @@ body {
 header,
 main,
 footer {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -34,10 +34,11 @@ article.wrapper {
 
 article.wrapper .subject {
   font-size: 2.2rem;
-  min-width: 500px;
+  min-width: 700px;
   padding-right: 2rem;
   font-weight: bold;
   display: flex;
+  letter-spacing: 0.2rem;
 }
 
 article.wrapper .grants {
@@ -51,6 +52,7 @@ article.wrapper .grants p:nth-child(2) {
 article.wrapper .contents {
   max-width: 700px;
   padding-top: 0.5rem;
+  text-decoration: solid;
 }
 
 article.wrapper li {
@@ -60,6 +62,7 @@ article.wrapper li {
 
 a.link {
   font-size: 1.2rem;
+  text-decoration: solid;
   font-weight: bold;
   color: #07a0ec;
   position: relative;
@@ -79,7 +82,7 @@ a.link {
 
 .bold {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .mr-1 {
   margin: 0 1rem 0 0;
