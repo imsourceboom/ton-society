@@ -49,11 +49,10 @@ article.wrapper .grants p:nth-child(2) {
   line-height: 0.5;
 }
 
-article.wrapper .contents * {
+article.wrapper .contents {
   max-width: 700px;
   min-width: 700px;
   padding-top: 0.5rem;
-  text-decoration: solid;
 }
 
 article.wrapper li {
