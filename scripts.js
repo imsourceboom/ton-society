@@ -54,7 +54,14 @@ var this_device = navigator.platform;
 if (this_device) {
   if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
     console.log('MOBILE');
-    applyHere.addEventListener('click', function () {
+    var clickEvent = (function () {
+      if ('ontouchstart' in document.documentElement === true) {
+        return 'touchstart';
+      } else {
+        return 'click';
+      }
+    })();
+    applyHere.addEventListener(clickEvent, function () {
       applyHere.textContent = 'Coming Soon...';
       setTimeout(() => {
         applyHere.textContent = 'Apply here.';
