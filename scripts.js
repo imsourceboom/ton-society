@@ -51,8 +51,8 @@ var pc_device = 'win16|win32|win64|mac|macintel';
 var this_device = navigator.platform;
 if (this_device) {
   if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
-    alert('MOBILE');
+    console('MOBILE');
   } else {
-    alert('PC');
+    console('PC');
   }
 }
