@@ -1,6 +1,6 @@
 'use strict';
 
-var throttling = function throttling(f) {
+var throttling = function (f) {
   var interval =
     arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 300;
   var isPending = false;
@@ -36,7 +36,7 @@ window.addEventListener(
   })
 );
 
-var moveGoToTop = function moveGoToTop() {
+var moveGoToTop = function () {
   if (window.pageYOffset > 0) {
     window.scrollTo({
       top: 0,
