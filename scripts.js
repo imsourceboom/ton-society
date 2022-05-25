@@ -54,6 +54,12 @@ var this_device = navigator.platform;
 if (this_device) {
   if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
     console.log('MOBILE');
+    applyHere.addEventListener('click', function () {
+      applyHere.textContent = 'Coming Soon...';
+      setTimeout(() => {
+        applyHere.textContent = 'Apply here.';
+      }, 500);
+    });
   } else {
     console.log('PC');
     applyHere.addEventListener('mouseover', function () {
