@@ -74,11 +74,11 @@ article.wrapper li {
   cursor: pointer;
 }
 
-.coming-soon:hover {
+/* .coming-soon:hover {
   color: rgba(7, 160, 236, 0);
-}
+} */
 
-.coming-soon:hover:after {
+/* .coming-soon:hover:after {
   content: 'Coming Soon...';
   position: absolute;
   top: 0;
@@ -89,7 +89,7 @@ article.wrapper li {
   white-space: nowrap;
   cursor: auto;
   margin-top: -2px;
-}
+} */
 
 .bold {
   font-weight: bold;
