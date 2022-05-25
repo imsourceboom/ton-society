@@ -65,24 +65,30 @@ article.wrapper li {
   margin-bottom: 1rem;
 }
 
-a.link {
+.link {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #07a0ec;
+  color: rgba(7, 160, 236, 1);
   position: relative;
   text-decoration: solid;
+  cursor: pointer;
 }
 
-.coming-soon:after {
+.coming-soon:hover {
+  color: rgba(7, 160, 236, 0);
+}
+
+.coming-soon:hover:after {
   content: 'Coming Soon...';
   position: absolute;
-  bottom: -70%;
-  left: 0%;
-  z-index: 99;
-  font-size: 0.6rem;
-  color: #f7f9fb;
-  background-color: rgba(248, 250, 252, 0.1);
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgba(7, 160, 236, 1);
+  white-space: nowrap;
   cursor: auto;
+  margin-top: -2px;
 }
 
 .bold {
