@@ -47,13 +47,13 @@ var moveGoToTop = function () {
 
 button.addEventListener('click', moveGoToTop);
 
+// Apply here 관련 스크린트 - 변경 사항 시 사용 X
 var applyHere = document.querySelector('.coming-soon');
 
 var pc_device = 'win16|win32|win64|mac|macintel';
 var this_device = navigator.platform;
 if (this_device) {
   if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
-    console.log('MOBILE');
     var clickEvent = (function () {
       if ('ontouchstart' in document.documentElement === true) {
         return 'touchstart';
@@ -68,7 +68,6 @@ if (this_device) {
       }, 500);
     });
   } else {
-    console.log('PC');
     applyHere.addEventListener('mouseover', function () {
       applyHere.textContent = 'Coming Soon...';
     });
