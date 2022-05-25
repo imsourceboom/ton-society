@@ -47,12 +47,21 @@ var moveGoToTop = function () {
 
 button.addEventListener('click', moveGoToTop);
 
+var applyHere = document.querySelector('.coming-soon');
+
 var pc_device = 'win16|win32|win64|mac|macintel';
 var this_device = navigator.platform;
 if (this_device) {
   if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
-    console('MOBILE');
+    console.log('MOBILE');
   } else {
-    console('PC');
+    console.log('PC');
+    applyHere.addEventListener('mouseover', function () {
+      applyHere.textContent = 'Coming Soon...';
+    });
+
+    applyHere.addEventListener('mouseout', function () {
+      applyHere.textContent = 'Apply here.';
+    });
   }
 }
