@@ -6,20 +6,34 @@ body {
 header,
 main,
 footer {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   padding: 1rem 2rem;
 }
 
 header {
   display: flex;
-  align-items: center;
-  font-size: 1.2rem;
 }
 
-.logo {
-  width: 35px;
-  margin-right: 0.4rem;
+.header-temp {
+  width: 30%;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  width: 70%;
+}
+
+.logo-wrap .logo {
+  width: 90px;
+  margin-right: 2rem;
+}
+
+.logo-wrap p {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 main {
@@ -34,25 +48,16 @@ article.wrapper {
 
 article.wrapper .subject {
   font-size: 2.2rem;
-  min-width: 700px;
-  padding-right: 2rem;
+  width: 30%;
+  padding-right: 50px;
   font-weight: bold;
   display: flex;
   letter-spacing: 0.2rem;
 }
 
-article.wrapper .grants {
-  display: block;
-}
-
-article.wrapper .grants p:nth-child(2) {
-  line-height: 0.5;
-}
-
 article.wrapper .contents {
-  max-width: 700px;
-  min-width: 700px;
-  padding-top: 0.5rem;
+  width: 70%;
+  font-size: 2rem;
 }
 
 article.wrapper .contents p,
@@ -66,34 +71,21 @@ article.wrapper li {
 }
 
 .link {
-  font-size: 1.2rem;
+  font-size: 1.1em;
   font-weight: bold;
-  color: rgba(7, 160, 236, 1);
+  color: #07a0ec;
   position: relative;
-  text-decoration: solid;
   cursor: pointer;
+  text-decoration: underline;
 }
 
-/* .coming-soon:hover {
-  color: rgba(7, 160, 236, 0);
-} */
-
-/* .coming-soon:hover:after {
-  content: 'Coming Soon...';
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: rgba(7, 160, 236, 1);
-  white-space: nowrap;
-  cursor: auto;
-  margin-top: -2px;
-} */
+.link:hover {
+  color: #0088cc;
+}
 
 .bold {
   font-weight: bold;
-  font-size: 1.05rem;
+  font-size: 1.01em;
 }
 .mr-1 {
   margin: 0 1rem 0 0;
@@ -124,19 +116,38 @@ footer {
     padding-top: 4.6rem;
   }
 
+  .header-temp {
+    display: none;
+  }
+
+  .logo-wrap {
+    width: 100%;
+  }
+
+  .logo-wrap .logo {
+    width: 35px;
+    margin-right: 0.8rem;
+  }
+
+  .logo-wrap p {
+    font-size: 1.2rem;
+  }
+
   article.wrapper {
     display: block;
+    margin-bottom: 6rem;
   }
 
   article.wrapper .subject {
-    font-size: 1.7rem;
-    min-width: auto;
+    width: 100%;
     padding-right: 0;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
 
   article.wrapper .contents {
-    min-width: auto;
+    width: 100%;
+    font-size: 1rem;
   }
 
   .coming-soon {
