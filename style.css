@@ -22,17 +22,16 @@ header {
 .logo-wrap {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
   width: 70%;
 }
 
 .logo-wrap .logo {
-  width: 90px;
-  margin-right: 2rem;
+  width: 50px;
+  margin-right: 1.2rem;
 }
 
 .logo-wrap p {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -47,7 +46,7 @@ article.wrapper {
 }
 
 article.wrapper .subject {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   width: 30%;
   padding-right: 50px;
   font-weight: bold;
@@ -57,7 +56,7 @@ article.wrapper .subject {
 
 article.wrapper .contents {
   width: 70%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 article.wrapper .contents p,
@@ -142,7 +141,7 @@ footer {
     width: 100%;
     padding-right: 0;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   article.wrapper .contents {
