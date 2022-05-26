@@ -75,7 +75,6 @@ article.wrapper li {
   color: #07a0ec;
   position: relative;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .link:hover {
@@ -104,7 +103,7 @@ footer {
   font-weight: lighter;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1439px) {
   header,
   main,
   footer {
