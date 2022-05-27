@@ -32,7 +32,7 @@ article .contents ul li {
   display: flex;
 }
 
-article .contents ul li b {
+article .contents ul li > b {
   margin-right: 0.5rem;
 }
 
