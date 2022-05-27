@@ -1,0 +1,45 @@
+header,
+main,
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+main {
+  padding-top: 5rem;
+}
+
+header .logo-wrap {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  width: 33px;
+  margin-right: 0.5rem;
+}
+
+article.wrapper {
+  margin-bottom: 5rem;
+}
+
+article .subject::before {
+  content: '•';
+  margin-right: 0.5rem;
+}
+
+article .contents ul li {
+  display: flex;
+}
+
+article .contents ul li b {
+  margin-right: 0.5rem;
+}
+
+.link {
+  color: #07a0ec;
+}
+
+.bold {
+  font-weight: normal;
+}
